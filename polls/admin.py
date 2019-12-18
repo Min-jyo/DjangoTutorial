@@ -6,7 +6,8 @@ from .models import Question, Choice
 
 @admin.register(Question)
 class QuestionAdmin(admin.ModelAdmin):
-    pass
+    fields = ['pub_date', 'question_text']
+
 
 
 @admin.register(Choice)
